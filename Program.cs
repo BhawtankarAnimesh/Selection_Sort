@@ -1,7 +1,14 @@
-﻿namespace ConsoleApp2
+﻿/*
+ Author - Animesh Anup Bhawtankar
+ Date - 02/28/2024
+ Comments - This is a practice code for selection sort.
+ */
+
+namespace ConsoleApp2
 {
     internal class Program
     {
+        //Main function
         static void Main(string[] args)
         {
             int[] arr = { 5, 72, 3, 14, 7, 1 };
@@ -24,6 +31,8 @@
                 arr[minIndex] = arr[i];
                 arr[i] = temp;
             }
+
+            //Print the sorted array
             Console.WriteLine("Sorted array is:");
             foreach (int num in arr)
             {
@@ -32,3 +41,4 @@
         }
     }
 }
+
